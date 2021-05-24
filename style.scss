@@ -193,6 +193,9 @@ body{
             }
         }
     }
+    .catalog_container{
+        padding: 0px 230px 0px 230px;
+    }
 }
 .button_container{
     display: flex;
@@ -331,6 +334,115 @@ footer{
                 background: #FFFFFF;
                 padding: 10px;
                 margin-left: 8px;
+            }
+            a:hover{
+                background: #F16D7F;
+            }
+        }
+    }
+}
+// Catalog
+.header_catalog{
+    display: flex;
+    justify-content: center;
+    background: #F8F3F4;
+    .header_catalog_cont{
+        width: $width;
+        height: 150px;
+        padding:0 230px 0px 230px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_catalog_left{
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 400;
+            a{
+                color: #F16D7F;
+            }
+        }
+        .header_catalog_right{
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 400;
+            a{
+                color: #636363;
+            }
+            .menu_text{
+                color: #F16D7F;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.search_menu{
+    display: flex;
+    justify-content: center;
+    .search_menu_cont{
+        width: $width;
+        padding: 0px 230px;
+        height: 135px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search_menu_left{
+            color: #000000;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 600;
+            img{
+                vertical-align: middle;
+                padding: 0 0 4px 10px;
+            }
+            a{
+                color: #000000;
+            }
+        }
+        .search_menu_central{
+            padding-right: 400px;
+            a{
+                font-size: 14px;
+                line-height: 17px;
+                color: #6F6E6E;
+                font-weight: 400;
+            }
+            img{
+                vertical-align: middle;
+                padding: 0 28px 0 10px;
+            }
+
+        }
+    }
+}
+.pages{
+    display: flex;
+    justify-content: center;
+    .pages_conteiner{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 140px;
+        .pagination{
+            border: 1px solid #EBEBEB;
+            height: 43px;
+            width: 283px;
+            margin-bottom: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            a{  
+                display: inline-block;
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 400;
+                color: #EBEBEB;
+            }
+            .black{
+                color: #000000;
+            }
+            a:hover{
+                color: #EF5B70;
+                font-weight: 700;
             }
         }
     }
