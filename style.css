@@ -419,6 +419,11 @@ body {
   padding-top: 16px;
 }
 
+.top_footer .top_footer_content .top_footer_content_card img {
+  height: 40px;
+  width: 40px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
