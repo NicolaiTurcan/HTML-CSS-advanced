@@ -61,6 +61,7 @@ body{
                     left: 0px;
                     border-radius: 5px;
                     box-shadow: $shadow;
+                    z-index: 2;
                     h3{
                         color: #000000;
                         font-size: 14px;
@@ -112,7 +113,6 @@ body{
         }
     }
 }
-
 .header_info{
     background: #F1E4E6;
     display: flex;
@@ -500,6 +500,11 @@ footer{
                 color: #F16D7F;
                 font-weight: 700;
             }
+            a:hover{
+                color: #F16D7F;
+                font-weight: 700;
+                text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+            }
         }
     }
 }
@@ -518,12 +523,32 @@ footer{
             font-size: 14px;
             line-height: 17px;
             font-weight: 600;
+            position: relative;
             img{
                 vertical-align: middle;
                 padding: 0 0 4px 10px;
             }
             a{
                 color: #000000;
+            }
+            .search_menu_left_hover{
+                position: absolute;
+                top: 3px;
+                background: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                .search_menu_heading{
+                    display: flex;
+                    align-items: center;
+                    .s1{
+                        padding: 0px 0px 0px 12px;
+                    }
+                    p{
+                        color: #EF5B70;
+                        font-weight: 600;
+                        line-height: 0px;
+                    }
+                }
             }
         }
         .search_menu_central{
@@ -571,6 +596,94 @@ footer{
             a:hover{
                 color: #EF5B70;
                 font-weight: 700;
+            }
+        }
+    }
+}
+// Produc
+.product_carousel{
+    display: flex;
+    justify-content: center;
+    background: #F7F7F7;
+    height: 777px;
+    .carousel{
+        .carousel-inner{
+            box-sizing: border-box;
+            max-height: 777px;
+            width: 600px;
+            margin: 0 auto;
+            .carousel-item{
+                height: 777px;
+                width: 600px;
+                img{
+                    width: 600px;
+                    height: 777px;
+                }
+            }
+        }
+    }
+}
+.card_block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card_block_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 600px;
+        max-width: 1140px;
+        border: 1px solid #EAEAEA;
+        padding: 65px 250px;
+        .card_block_info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card_block_head{
+                color: #F16D7F;
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            .line{
+                background: #f1405b;
+                opacity: unset;
+                width: 63px;
+                height: 3px;
+                margin: 0;
+            }
+            .card_block_head2{
+                color: #4D4D4D;
+                font-size: 18px;
+                margin-top: 12px;
+            }
+            .card_block_text{
+                color: #5E5E5E;
+                text-align: center;
+                margin-top: 48px;
+            }
+            .card_block_price{
+                color: #EF5B70;
+                margin-top: 32px;
+                margin-bottom: 65px;
+                font-size: 24px;
+            }
+        }
+        .card_block_details{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            details{
+                display: flex;
+                flex-direction: column;
+                summary{
+                    font-weight: 400;
+                    list-style: none;
+                    padding-left: 24px;
+                    img{
+                        vertical-align: middle;
+                        padding-left: 9px;
+                    }
+                }
             }
         }
     }
