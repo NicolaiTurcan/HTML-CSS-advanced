@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_container">
+            <div class="left_header">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="search">
+                    <img src="img/search.svg" alt="Search">
+                </div>
+            </div>
+            <div class="right_header">
+                <div class="menu">
+                    <a href="#" class="menu_box"><img src="img/menu.svg" alt="Menu"></a>
+                    <div class="menu_hover">
+                        <h3>MENU</h3>
+                        <div class="menu_hover_items">
+                            <p class="items_heading">MAN</p>
+                            <a href="#" class="menu_hover_link">Accessories</a>
+                            <a href="#" class="menu_hover_link">Bags</a>
+                            <a href="#" class="menu_hover_link">Denim</a>
+                            <a href="#" class="menu_hover_link">T-Shirts</a>
+                        </div>
+                        <div class="menu_hover_items">
+                            <p class="items_heading">WOMAN</p>
+                            <a href="#" class="menu_hover_link">Accessories</a>
+                            <a href="#" class="menu_hover_link">Jackets & Coats</a>
+                            <a href="#" class="menu_hover_link">Polos</a>
+                            <a href="#" class="menu_hover_link">T-Shirts</a>
+                            <a href="#" class="menu_hover_link">Shirts</a>
+                        </div>
+                        <div class="menu_hover_items">
+                            <p class="items_heading">KIDS</p>
+                            <a href="#" class="menu_hover_link">Accessories</a>
+                            <a href="#" class="menu_hover_link">Jackets & Coats</a>
+                            <a href="#" class="menu_hover_link">Polos</a>
+                            <a href="#" class="menu_hover_link">T-Shirts</a>
+                            <a href="#" class="menu_hover_link">Shirts</a>
+                            <a href="#" class="menu_hover_link">Bags</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="authorization">
+                    <a href="registration.html"><img src="img/authorization.svg" alt="Authorization"></a>
+                </div>
+                <div class="cart">
+                    <a href="#"><img src="img/cart.svg" alt="Cart"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header_catalog">
+        <div class="header_catalog_cont">
+            <div class="header_catalog_left">
+                <a href="#">SHOPPING CART</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <form class="containerCart" action="#">
+            <div class="containerCart__items">
+                <div class="cart__item">
+                    <div class="cart__item__img">
+                        <img src="img/content_card3.jpg" alt="Model">
+                    </div>
+                    <div class="cart__item__info">
+                        <h2>MANGO PEOPLE T&nbsp;-&nbsp;SHIRT</h2>
+                        <p>Price:<span> $300</span></p>
+                        <p>Color: Red</p>
+                        <p>Size: XL</p>
+                        <p class="inline-block">Quantity:</p><input class="quantity" type="number" value="2">
+                        <div class="cart_delete">
+                            <button class="delete">
+                                <img class="delete" src="img/cart_vector.svg" alt="Delete">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__item">
+                    <div class="cart__item__img">
+                        <img src="img/content_ccard2.jpg" alt="Model">
+                    </div>
+                    <div class="cart__item__info">
+                        <h2>MANGO PEOPLE T&nbsp;-&nbsp;SHIRT</h2>
+                        <p>Price:<span> $300</span></p>
+                        <p>Color: Red</p>
+                        <p>Size: XL</p>
+                        <p class="inline-block">Quantity:</p><input class="quantity" type="number" value="1">
+                        <div class="cart_delete">
+                            <button class="delete">
+                                <img class="delete" src="img/cart_vector.svg" alt="Delete">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerCart__buttons">
+                    <button class="cart__button">CLEAR SHOPPING CART</button>
+                    <button class="cart__button">CONTINUE SHOPPING</button>
+                </div>
+            </div>
+            <div class="containerCart__form">
+                <div class="cart__form_inputs">
+                    <p class="form_heading">SHIPPING ADRESS</p>
+                    <input class="form_input" type="text" placeholder="Bangladesh"><br>
+                    <input class="form_input" type="text" placeholder="State"><br>
+                    <input class="form_input" type="text" id="zip" name="zip" pattern="[0-9]*"
+                        placeholder="Postcode / Zip">
+                    <button>
+                        <p>GET A QUOTE</p>
+                    </button>
+                </div>
+                <div class="cart__form_checkout">
+                    <div class="checkout-top">
+                        <p>SUB TOTAL<span>$900</span></p>
+                        <p class="checkout-topText">GRAND TOTAL<span class="pink">$900</span></p>
+                    </div>
+                    <div class="checkout-bottom">
+                        <button type="submit">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer_conteiner">
+            <div class="footer_left">
+                <img class="footer_img" src="img/footer_foto.png" alt="Director">
+                <p class="footer_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+                        condimentum“</i></p>
+            </div>
+            <div class="footer_right">
+                <h2 class="footer_head">SUBSCRIBE</h2>
+                <p class="footer_text2">FOR OUR NEWLETTER AND PROMOTION</p>
+                <form action="#">
+                    <input type="email" class="input_footer" placeholder="Enter Your Email">
+                    <button class="footer_button">Subscribe</button>
+                </form>
+
+            </div>
+        </div>
+    </footer>
+    <div class="footer_bottom">
+        <div class="footer_bottom_conteiner">
+            <div class="footer_bottom_left">
+                <p class="footer_bottomText">&copy 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="footer_bottom_right">
+                <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="img/pinterest.svg" alt="Printerest"></a>
+                <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
