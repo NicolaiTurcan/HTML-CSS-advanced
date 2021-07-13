@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="iconsfont.css">
     <link rel="stylesheet" href="style.css">
     <title>Product</title>
 </head>
@@ -19,10 +20,17 @@
                     <a href="index.html"><img src="img/logo.svg" alt="Logo"></a>
                 </div>
                 <div class="search">
-                    <img src="img/search.svg" alt="Search">
+                    <form action="#">
+                        <button type="submit">
+                            <img src="img/search.svg" alt="Search">
+                        </button>
+                        <div class="search_bar">
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="right_header">
+            <nav class="right_header">
                 <div class="menu">
                     <a href="#" class="menu_box"><img src="img/menu.svg" alt="Menu"></a>
                     <div class="menu_hover">
@@ -57,9 +65,32 @@
                     <a href="registration.html"><img src="img/authorization.svg" alt="Authorization"></a>
                 </div>
                 <div class="cart">
-                    <a href="#"><img src="img/cart.svg" alt="Cart"></a>
+                    <div class="cart_info">
+                        <div class="cart_info_top">
+                            <div class="cart_items">
+                                <p>Name</p>
+                            </div>
+                            <div class="cart_items">
+                                <p>Quantity</p>
+                            </div>
+                            <div class="cart_items">
+                                <p>Price</p>
+                            </div>
+                            <div class="cart_items">
+                                <p>Total</p>
+                            </div>
+                        </div>
+                        <div class="cart_info_bottom">
+                            <div class="cart_items">
+                                <p>Total summe:</p>
+                            </div>
+                            <div class="cart_items"><span>0.00$</span></div>
+                        </div>
+                    </div>
+                    <div class="counter"><span>0</span></div>
+                    <a href="cart.html"><img src="img/cart.svg" alt="Cart"></a>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     <div class="header_catalog">
@@ -146,86 +177,97 @@
             </form>
         </div>
     </div>
-    <div class="empty"></div>
-    <div class="content">
-        <div class="content_conteiner content-product">
+    <div class="empty">
+    </div>
+    <section class="content">
+        <div class="content_conteiner">
             <div class="content_conteinerCard">
-                <a href="#">
-                    <div class="content_container_card_img">
+                <div class="content_container_card_img">
+                    <a href="Product.html">
                         <img src="img/content_card1.jpg" alt="Model2" class="card_img">
-                        <a href="#" class="content_button_link">
-                            <div class="content_button">
-                                <img src="img/cart.svg" alt="cart">
-                                <p>Add to Cart</p>
-                            </div>
-                        </a>
-                    </div>
+                    </a>
+                    <button data-type="1" class="content_button_link">
+                        <div class="content_button">
+                            <img src="img/cart.svg" alt="cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </button>
+                </div>
+                <a href="Product.html">
                     <div class="content_container_card_info">
-                        <h3 class="h3">ELLERY X M'O CAPSULE</h3>
+                        <h3 class="h3">ELLERY X M</h3>
                         <p class="content_card">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter
                             of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="price">$52.00</p>
+                        <p class="price">$50.25</p>
                     </div>
                 </a>
             </div>
             <div class="content_conteinerCard">
-                <a href="#">
-                    <div class="content_container_card_img">
+                <div class="content_container_card_img">
+                    <a href="Product.html">
                         <img src="img/content_card2.jpg" alt="Model2" class="card_img">
-                        <a href="#" class="content_button_link">
-                            <div class="content_button">
-                                <img src="img/cart.svg" alt="cart">
-                                <p>Add to Cart</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="content_container_card_info">
+                    </a>
+                    <button data-type="2" class="content_button_link">
+                        <div class="content_button">
+                            <img src="img/cart.svg" alt="cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </button>
+                </div>
+                <div class="content_container_card_info">
+                    <a href="Product.html">
                         <h3 class="h3">ELLERY X M'O CAPSULE</h3>
                         <p class="content_card">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter
                             of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="price">$52.00</p>
-                    </div>
-                </a>
+                        <p class="price">$52.50</p>
+                    </a>
+                </div>
             </div>
             <div class="content_conteinerCard">
-                <a href="#">
-                    <div class="content_container_card_img">
+                <div class="content_container_card_img">
+                    <a href="Product.html">
                         <img src="img/content_card3.jpg" alt="Model2" class="card_img">
-                        <a href="#" class="content_button_link">
-                            <div class="content_button">
-                                <img src="img/cart.svg" alt="cart">
-                                <p>Add to Cart</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="content_container_card_info">
-                        <h3 class="h3">ELLERY X M'O CAPSULE</h3>
+                    </a>
+                    <button data-type="3" class="content_button_link">
+                        <div class="content_button">
+                            <img src="img/cart.svg" alt="cart">
+                            <p>Add to Cart</p>
+                        </div>
+                    </button>
+                </div>
+                <div class="content_container_card_info">
+                    <a href="Product.html">
+                        <h3 class="h3">ELLERY</h3>
                         <p class="content_card">Known for her sculptural takes on traditional tailoring, Australian
                             arbiter
                             of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="price">$52.00</p>
-                    </div>
+                        <p class="price">$48.99</p>
+                    </a>
+                </div>
                 </a>
             </div>
         </div>
-    </div>
+    </section>
     <footer>
-        <div class="footer_conteiner">
-            <div class="footer_left">
-                <img class="footer_img" src="img/footer_foto.png" alt="Director">
-                <p class="footer_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
-                        condimentum“</i></p>
-            </div>
-            <div class="footer_right">
-                <h2 class="footer_head">SUBSCRIBE</h2>
-                <p class="footer_text2">FOR OUR NEWLETTER AND PROMOTION</p>
-                <form action="#">
-                    <input type="email" class="input_footer" placeholder="Enter Your Email">
-                    <button class="footer_button">Subscribe</button>
-                </form>
-
+        <div class="footer_content">
+            <div class="footer_conteiner">
+                <figure class="footer_left">
+                    <img class="footer_img" src="img/footer_foto.png" alt="Director">
+                    <p class="footer_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus
+                            condimentum“</i></p>
+                </figure>
+                <div class="footer_right">
+                    <h2 class="footer_head">SUBSCRIBE</h2>
+                    <p class="footer_text2">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form action="#">
+                        <div class="form_cont">
+                            <input type="email" class="input_footer" placeholder="Enter Your Email">
+                            <button class="footer_button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
@@ -234,17 +276,18 @@
             <div class="footer_bottom_left">
                 <p class="footer_bottomText">&copy 2021 Brand All Rights Reserved.</p>
             </div>
-            <div class="footer_bottom_right">
-                <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="img/pinterest.svg" alt="Printerest"></a>
-                <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
-            </div>
+            <nav class="footer_bottom_right">
+                <a href="#" class="icon-facebook"></a>
+                <a href="#" class="icon-instagram"></a>
+                <a href="#" class="icon-pinterest"></a>
+                <a href="#" class="icon-twitter"></a>
+            </nav>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
+    <script src="./scripts/cart.js"></script>
 </body>
 
 </html>
