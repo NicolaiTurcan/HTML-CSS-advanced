@@ -62,6 +62,65 @@ body{
             align-items: center;
             .cart{
                 padding: 15px;
+                position: relative;
+                .counter{
+                    position: absolute;
+                    background: #F16D7F;
+                    min-width: 20px;
+                    min-height: 19px;
+                    border-radius: 100px;
+                    right: 7px;
+                    top: 9px;
+                    text-align: center;
+                    span{
+                        color: #fff;
+                        font-weight: 400;
+                    }
+                }
+                .cart_info{
+                    position: absolute;
+                    display: none;
+                    flex-direction: column;
+                    background: #f0e3e3;
+                    border-radius: 10px;
+                    z-index: 3;
+                    top: 35px;
+                    right: 10px;
+                    .cart_info_top{
+                        display: flex;
+                        justify-content: space-around;
+                        box-shadow: 0px 24px 3px -24px rgb(190, 158, 167);
+                    }
+                    .cart_info_bottom{
+                        display: grid;
+                        grid-template-columns: 75% 25%;
+                        span{
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+                    }
+                    .cart_info_main{
+                       display: flex;
+                       box-shadow: 0px 24px 3px -24px rgb(190, 158, 167);
+                    }
+                    .cart_items{
+                        min-width: 75px;
+                        min-height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 500;
+                        padding: 10px;
+                        p{
+                            font-weight: 700;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .cart:hover .cart_info{
+                display: flex;
+                box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.10), -5px -5px 30px 15px rgba(0,0,0,0.10);
             }
             .authorization{
                 padding: 15px;
@@ -293,6 +352,7 @@ body{
                     position: absolute;
                     display: none;
                     transition: 0.5s;
+                    background: none;
                     .content_button{
                         display: flex;
                         justify-content: center;
@@ -305,6 +365,7 @@ body{
                             color: #FFFFFF;
                             font-weight: 400;
                             padding: 10px;
+                            margin-bottom: 0px;
                         }
                         img{
                             height: 25px;
@@ -315,6 +376,9 @@ body{
             }
             .content_container_card_info{
                 padding: 5%;
+                p{
+                    margin-bottom: 0px;
+                }
                 .h3{
                     font-size: 13px;
                     line-height: 16px;
